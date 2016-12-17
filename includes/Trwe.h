@@ -27,6 +27,7 @@ namespace Trwe
 		void MainLoop();
 
 		eSDL::Engine *engine;
+		eSDL::Surface *surfaces;
 	};
 }
 

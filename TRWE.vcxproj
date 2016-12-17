@@ -96,7 +96,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -107,7 +107,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,12 +141,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="srcs\eSDL.cpp" />
+    <ClCompile Include="srcs\eSDL_Init.cpp" />
+    <ClCompile Include="srcs\eSDL_Fps.cpp" />
+    <ClCompile Include="srcs\eSDL_Input.cpp" />
+    <ClCompile Include="srcs\eSDL_Surface.cpp" />
     <ClCompile Include="srcs\Trwe.cpp" />
     <ClCompile Include="srcs\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\eSDL.h" />
+    <ClInclude Include="includes\eSDL_Fps.h" />
+    <ClInclude Include="includes\eSDL_Init.h" />
+    <ClInclude Include="includes\eSDL_Input.h" />
+    <ClInclude Include="includes\eSDL_Surface.h" />
     <ClInclude Include="includes\global.h" />
     <ClInclude Include="includes\stdafx.h" />
     <ClInclude Include="includes\Trwe.h" />
